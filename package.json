@@ -1,0 +1,35 @@
+{
+  "name": "web-2-nextjs",
+  "version": "1.0.0",
+  "description": "CATCHPLAY WEB 2.0 WITH NEXTJS FOR SSR",
+  "main": "index.js",
+  "scripts": {
+    "dev": "babel-node ./server/index.js",
+    "build": "next build",
+    "build-server": "babel ./server/index.js -o ./.next/server.js",
+    "start": "yarn build && yarn build-server && NODE_ENV=production node ./.next/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@52.76.70.133:7999/jav/web-2-nextjs.git"
+  },
+  "author": "CATCHPLAY",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/node": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-react": "^7.0.0",
+    "app-root-path": "^2.2.1",
+    "babel-plugin-module-resolver": "^3.2.0",
+    "express": "^4.17.0",
+    "fs-extra": "^8.0.1",
+    "https": "^1.0.0",
+    "isomorphic-fetch": "^2.2.1",
+    "next": "^8.1.0",
+    "next-routes": "^1.4.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}
